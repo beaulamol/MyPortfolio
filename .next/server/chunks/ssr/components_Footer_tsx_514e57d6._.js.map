@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/beaula/Desktop/Beaula/WorkSpace/CursorProjects/MyPortfolio/components/Footer.tsx"],"sourcesContent":["import { SITE } from \"@/lib/site\";\n\nexport function Footer() {\n  const year = new Date().getFullYear();\n  return (\n    <footer className=\"border-t border-[var(--color-border)] px-4 py-8 sm:px-6 lg:px-8\">\n      <div className=\"mx-auto flex max-w-4xl flex-col items-center justify-between gap-4 sm:flex-row\">\n        <p className=\"font-mono text-xs text-[var(--color-muted)]\">\n          © {year} {SITE.name}. All rights reserved.\n        </p>\n        <p className=\"text-center text-xs text-[var(--color-muted)] sm:text-right\">\n          Built with Next.js, TypeScript, Tailwind CSS & Framer Motion.\n        </p>\n      </div>\n    </footer>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEO,SAAS;IACd,MAAM,OAAO,IAAI,OAAO,WAAW;IACnC,qBACE,8OAAC;QAAO,WAAU;kBAChB,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAE,WAAU;;wBAA8C;wBACtD;wBAAK;wBAAE,mHAAI,CAAC,IAAI;wBAAC;;;;;;;8BAEtB,8OAAC;oBAAE,WAAU;8BAA8D;;;;;;;;;;;;;;;;;AAMnF","debugId":null}}]
+}

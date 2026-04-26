@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --color-background: #0a0a0b;
+  --color-surface: #121214;
+  --color-surface-elevated: #18181b;
+  --color-border: #27272a;
+  --color-muted: #a1a1aa;
+  --color-foreground: #fafafa;
+  --color-accent: #e4e4e7;
+  --color-highlight: #3b82f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-[var(--color-background)] text-[var(--color-foreground)] antialiased;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+::selection {
+  background: rgb(59 130 246 / 0.35);
+  color: var(--color-foreground);
+}
